@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Footer section with background color -->
+    <footer class="bg-[#659f8f] dark:bg-[#313131]">
+        <div class="container px-6 py-12 mx-auto">
+            <!-- Grid layout with responsive column setup -->
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+                <!-- First column for subscription -->
+                <div class="sm:col-span-2">
+                    <!-- Title for subscription section -->
+                    <h1 class="max-w-lg text-xl font-semibold tracking-tight text-[#313131] xl:text-2xl dark:text-white">Subscribe to our newsletter for updates.</h1>
+                    <!-- Subscription form -->
+                    <div class="flex flex-col mt-6 space-y-3 md:space-y-0 md:flex-row md:items-center">
+                        <!-- Email input field -->
+                        <input id="email" type="text" placeholder="Email Address" class="px-4 py-2 text-[#313131] bg-white border rounded-md dark:bg-[#313131] dark:text-white dark:border-[#313131] focus:border-[#d86943] dark:focus:border-[#d86943] focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-[#d86943]">
+                        <!-- Subscribe button -->
+                        <button class="w-full md:w-auto px-6 py-2.5 bg-[#d86943] rounded-md text-white mt-4 md:mt-0 md:ml-4">Subscribe</button>
+                    </div>
+                </div>
+                <!-- Second column for quick links -->
+                <div class="mt-6 md:mt-0">
+                    <!-- Title for quick links section -->
+                    <p class="text-[#313131] font-semibold mb-3">Quick Links</p>
+                    <!-- List of quick links -->
+                    <div class="flex flex-col space-y-3">
+                        <a href="#">Home</a>
+                        <a href="#">Who We Are</a>
+                        <a href="#">Our Philosophy</a>
+                    </div>
+                </div>
+                <!-- Third column for technologies -->
+                <div class="mt-6 md:mt-0">
+                    <!-- Title for technologies section -->
+                    <p class="text-[#313131] font-semibold mb-3">Technologies</p>
+                    <!-- List of technologies -->
+                    <div class="flex flex-col space-y-3">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">JavaScript</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Horizontal rule separator -->
+            <hr class="my-6 border-[#d86943]">
+            
+            <!-- Footer bottom section -->
+            <div class="flex items-center justify-between">
+                <!-- Brand logo -->
+                <a href="#">
+                    <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="">
+                </a>
+                <!-- Add your social media icons here -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
